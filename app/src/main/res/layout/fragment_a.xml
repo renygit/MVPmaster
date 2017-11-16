@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.renygit.multistateview.MultiStateView
+        android:id="@+id/msv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_tipEmpty="没有图片推荐（写在这里就不使用在Application配置的全局提示语，不写使用默认提示语）"
+        app:msv_tipNoNetwork="网络开小差了">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </com.renygit.multistateview.MultiStateView>
+
+</LinearLayout>
