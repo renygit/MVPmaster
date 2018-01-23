@@ -131,6 +131,10 @@ public abstract class RBaseFragment<P extends RBasePresenter> extends Fragment i
         return mRoot;
     }
 
+    public View getRootView() {
+        return mRoot;
+    }
+
     @Override
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
